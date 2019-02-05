@@ -1,0 +1,6 @@
+node_modules/
+.idea/
+Gulpfile.js
+deploy_npm.bat
+jsql-gulp-plugin.iml
+jsql

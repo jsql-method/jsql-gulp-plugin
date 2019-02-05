@@ -1,0 +1,45 @@
+{
+  "name": "gulp-jsql",
+  "version": "1.0.3",
+  "description": "A Gulp plugin to change sql queries to hash for JSQL.",
+  "main": "jsql.js",
+  "keywords": [
+    "gulp-jsql",
+    "gulpplugin",
+    "jsql-javascript",
+    "jsql",
+    "jsql-it",
+    "jsql-optimization"
+  ],
+  "homepage": "http://jsql.it",
+  "author": {
+    "name": "JSQL",
+    "email": "office@jsql.it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://jsql.it"
+  },
+  "bugs": {
+    "url": "http://jsql.it"
+  },
+  "license": [
+    {
+      "type": "ISC",
+      "url": "http://jsql.it"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "npm-jsql": "latest"
+  },
+  "peerDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
