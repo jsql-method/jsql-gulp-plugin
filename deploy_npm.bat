@@ -1,28 +1,27 @@
 @echo off
-ECHO Po pojawieniu sie "Username" podaj login do rejestru NPM
+@chcp 1250 >nul
+
+CALL prepare.bat
+CALL npm run test
+
+ECHO Set login and password to npm registry
 CALL npm login
 
-ECHO Jestes poprawnie zalogowany jako:
+ECHO You are now logged as:
 CALL npm whoami
 
-ECHO Przed opublikowaniem w rejestrze NPM pamietaj o zaktualizowaniu pliku CHANGELOG.md
 ECHO.
-pause >nul
-
-ECHO.
-ECHO Po zapisaniu zmian w notatniku wroc do konsoli i wcisnij enter
-REM Otwiera notepad aby zmienic wersje ####################################
+ECHO Increment version, save file and press ENTER to publish
 notepad package.json
 
-ECHO Po wcisnieciu enter zmiany beda publikowane w rejestrze NPM
+ECHO Press ENTER to publish changes are into NPM registry
 ECHO.
 pause >nul
-ECHO Zmiany sa teraz publikowane w rejestrze NPM
+ECHO Changes are now publishing...
 CALL npm publish
 
-REM wylogowuje ############################################################
 CALL npm logout
 
 ECHO.
-ECHO Nacisnij enter aby zakonczyc
+ECHO Press key to finish
 pause >nul

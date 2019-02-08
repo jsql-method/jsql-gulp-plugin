@@ -1,45 +1,43 @@
 {
   "name": "gulp-jsql",
-  "version": "1.0.3",
-  "description": "A Gulp plugin to change sql queries to hash for JSQL.",
-  "main": "jsql.js",
+  "description": "JSQL CLI plugin for Gulp tasks runner. Visit www.jsql.it",
+  "version": "0.3.1",
+  "homepage": "https://jsql.it",
+  "author": {
+    "name": "JSQL Sp.z.o.o. (Ltd, LLC)",
+    "email": "office@jsql.it"
+  },
+  "scripts": {
+    "publish": "deploy_npm.bat",
+    "test": "gulp test"
+  },
+  "bugs": {
+    "url": "https://jsql.it/product-support"
+  },
   "keywords": [
-    "gulp-jsql",
-    "gulpplugin",
-    "jsql-javascript",
+    "jsql-grunt",
+    "jsql grunt",
     "jsql",
     "jsql-it",
     "jsql-optimization"
   ],
-  "homepage": "http://jsql.it",
-  "author": {
-    "name": "JSQL",
-    "email": "office@jsql.it"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://jsql.it"
-  },
-  "bugs": {
-    "url": "http://jsql.it"
-  },
-  "license": [
+  "licenses": [
     {
       "type": "ISC",
-      "url": "http://jsql.it"
+      "url": "https://jsql.it/public-packages-license/"
     }
   ],
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {},
   "dependencies": {
-    "npm-jsql": "latest"
+    "jsql-cli": "latest"
   },
   "peerDependencies": {
     "gulp": "^3.9.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0"
   }
 }
