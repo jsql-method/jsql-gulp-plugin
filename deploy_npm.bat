@@ -2,6 +2,7 @@
 @chcp 1250 >nul
 
 CALL prepare.bat
+CALL install-local.bat
 CALL npm run test
 
 ECHO Set login and password to npm registry

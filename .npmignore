@@ -8,3 +8,5 @@ prepare.bat
 Gulpfile.js
 test-key.key
 jsql-gulp-plugin.iml
+*.tgz
+install-local.bat

@@ -1,12 +1,13 @@
 {
   "name": "gulp-jsql",
   "description": "JSQL CLI plugin for Gulp tasks runner. Visit www.jsql.it",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "homepage": "https://jsql.it",
   "author": {
     "name": "JSQL Sp.z.o.o. (Ltd, LLC)",
     "email": "office@jsql.it"
   },
+  "main": "jsql.js",
   "scripts": {
     "test": "gulp test"
   },
