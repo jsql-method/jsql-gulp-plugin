@@ -1,11 +1,10 @@
-node_modules/
 .idea/
+node_modules/
 test/
 .gitignore
 deploy_npm.bat
-.npmignore
 package-lock.json
 prepare.bat
-Gruntfile.js
-jsql
-jsql-grunt-plugin.iml
+Gulpfile.js
+test-key.key
+jsql-gulp-plugin.iml

@@ -1,23 +1,23 @@
 /*
- * Copyright (c) 2018 JSQL Sp.z.o.o. (Ltd, LLC) www.jsql.it
- * Licensed under the ISC license
+ * Copyright (c) 2017-2019 JSQL Sp. z.o.o. (Ltd, LLC) www.jsql.it
+ * See LICENSE or https://jsql.it/public-packages-license
  */
 
 'use strict';
 
-const { execFile } = require('child_process');
+const execSync = require('child_process').execSync;
 const PLUGIN_NAME = 'jsql';
 
-module.exports = function(opts){
+module.exports = function (options) {
 
-    execFile('node', [require.resolve('jsql-cli'), opts.apiKey, opts.src, opts.dist, opts.watcher], (error, stdout, stderr) => {
+    let command = 'node ' + require.resolve('jsql-cli') +
+        ' --apiKey=' + options.apiKey +
+        ' --input=' + options.src +
+        ' --output=' + options.dist +
+        ' --env=' + (options.local ? 'local' : 'prod') +
+        (options.devKeyFileName ? ' --devKeyFileName=' + options.devKeyFileName : '') +
+        (options.debug ? ' --debug ' : '');
 
-      if (error) {
-        throw error;
-      }
-
-      console.log(stdout);
-
-    });
+    console.log(execSync(command).toString());
 
 };

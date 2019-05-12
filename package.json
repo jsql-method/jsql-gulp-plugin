@@ -8,7 +8,6 @@
     "email": "office@jsql.it"
   },
   "scripts": {
-    "publish": "deploy_npm.bat",
     "test": "gulp test"
   },
   "bugs": {
@@ -23,8 +22,8 @@
   ],
   "licenses": [
     {
-      "type": "ISC",
-      "url": "https://jsql.it/public-packages-license/"
+      "type": "LicenseRef-LICENSE",
+      "url": "https://jsql.it/public-packages-license"
     }
   ],
   "engines": {
