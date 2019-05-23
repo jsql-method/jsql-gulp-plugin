@@ -14,7 +14,7 @@ module.exports = function (options) {
         ' --apiKey=' + options.apiKey +
         ' --input=' + options.src +
         ' --output=' + options.dist +
-        ' --env=' + (options.local ? 'local' : 'prod') +
+        ' --env=' + (options.env ? options.env : 'prod') +
         (options.devKeyFileName ? ' --devKeyFileName=' + options.devKeyFileName : '') +
         (options.debug ? ' --debug ' : '');
 
