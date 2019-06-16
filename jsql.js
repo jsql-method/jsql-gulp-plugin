@@ -15,13 +15,8 @@ module.exports = function (options) {
         ' --input=' + options.src +
         ' --output=' + options.dist +
         ' --env=' + (options.env ? options.env : 'prod') +
-        ' --development=' + options.development +
         (options.devKeyFileName ? ' --devKeyFileName=' + options.devKeyFileName : '') +
         (options.debug ? ' --debug ' : '');
-
-    if (options.development) {
-        command += ' --development';
-    }
 
     console.log(execSync(command).toString());
 
